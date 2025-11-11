@@ -1,0 +1,19 @@
+@model SistemaDeCursoMVC.Models.Curso
+
+<h2>Cadastrar Cursos</h2>
+
+<form asp-action="Criar">
+    <label>Nome:</label>
+    <input type="text" name="Nome" class="form-control" required />
+
+    <label>Horas:</label>
+    <input type="number" name="Horas" class="form-control" required />
+
+    <label>Tipo:</label>
+    <select name="TipoCursoConstrutor" class="form-control" required>
+        <option value="Tecnico">Tecnico</option>
+        <option value="Superior">Superior</option>
+    </select>
+
+    <button type="submit" class="btn btn-success mt-3">Salvar</button>
+</form>
